@@ -12,6 +12,9 @@ requires-python = ">=3.10"
 authors = [
     { name = "UncleC", email = "iamloli@foxmail.com" },
 ]
+maintainers = [
+    { name = "Marius Cogeanu", email = "marius@users.noreply.github.com" },
+]
 keywords = ["pentest", "security", "ai", "mcp", "cli", "vulnerability", "red-team"]
 classifiers = [
     "Intended Audience :: Information Technology",
