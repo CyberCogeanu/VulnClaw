@@ -708,17 +708,17 @@ Config file: `~/.vulnclaw/config.yaml`.
 
 ## Language
 
-VulnClaw ships with a built-in **English** bilingual interface. The default is **English** (`auto` mode falls back to English), so international users never hit a language wall; Chinese is fully preserved and both modes produce identical behavior.
+VulnClaw defaults to **English** (`auto` mode defaults to English), so international users never hit a language wall.
 
-Switch the UI language any of three ways:
+Switch the UI language via:
 
 | Method | Example |
 |---|---|
-| REPL command | `/language en` or `/language zh` (or `/language auto`) inside the interactive REPL |
-| Environment variable | `VULNCLAW_LANG=zh` / `VULNCLAW_LANG=en` |
-| Config file | `session.language: auto \| zh \| en` in `~/.vulnclaw/config.yaml` |
+| REPL command | `/language en` inside the interactive REPL |
+| Environment variable | `VULNCLAW_LANG=en` |
+| Config file | `session.language: en` in `~/.vulnclaw/config.yaml` |
 
-Everything user-visible in the CLI follows the current language: REPL messages and status banners, event stream, solve reports, knowledge-base status, and LLM retry/recovery notices. Agent detection keyword tables are bilingual, so English or Chinese task phrasing is classified the same way. (Note: the web dashboard is not yet localized; that's planned separately.)
+Everything user-visible in the CLI follows the current language: REPL messages and status banners, event stream, solve reports, knowledge-base status, and LLM retry/recovery notices.
 
 ---
 
@@ -730,7 +730,7 @@ See [CHANGELOG.md](CHANGELOG.md) for full version history.
 
 ## Contributing
 
-Contributions are welcome! Please read [CONTRIBUTING_EN.md](CONTRIBUTING_EN.md) (English) or [CONTRIBUTING.md](CONTRIBUTING.md) (Chinese) before submitting a pull request.
+Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) before submitting a pull request.
 
 The project uses a `dev` branch for integration - all PRs should target `dev`, not `main`.
 
