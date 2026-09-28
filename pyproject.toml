@@ -36,12 +36,12 @@ dependencies = [
     "pyyaml>=6.0",
     "toml>=0.10.0",
     "jinja2>=3.1.0",
-    # streamable-http（及 sse/stdio）MCP 传输依赖 mcp 客户端 SDK；
-    # VulnClaw 的 lifecycle/probe 使用 mcp 1.x 时代的符号 streamablehttp_client，
-    # mcp>=2.0 已将其改名为 streamable_http_client，故 pin 到 1.x 以保证 HTTP MCP 可用。
+    # streamable-http (and sse/stdio) MCP transport depends on the MCP client SDK;
+    # VulnClaw lifecycle/probe uses the 1.x symbol streamablehttp_client.
+    # mcp>=2.0 renamed this to streamable_http_client, so pin to 1.x to ensure HTTP MCP support.
     "mcp>=1.0,<2.0",
-    # ── 沙箱依赖（python_execute 运行时）──────────────────────────────
-    # LLM 在 python_execute 中可直接 import 以下库
+    # -- Sandbox dependencies (python_execute runtime) ------------------
+    # LLMs running in python_execute can directly import the following libraries
     "beautifulsoup4>=4.12.0",
     "lxml>=4.9.0",
     "pycryptodome>=3.19.0",
@@ -79,9 +79,9 @@ traffic = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/Netw0rkNoob/VulnClaw"
-Repository = "https://github.com/Netw0rkNoob/VulnClaw"
-Issues = "https://github.com/Netw0rkNoob/VulnClaw/issues"
+Homepage = "https://github.com/CyberCogeanu/VulnClaw"
+Repository = "https://github.com/CyberCogeanu/VulnClaw"
+Issues = "https://github.com/CyberCogeanu/VulnClaw/issues"
 
 [project.scripts]
 vulnclaw = "vulnclaw.cli.main:app"

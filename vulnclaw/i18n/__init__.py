@@ -11,7 +11,7 @@ from typing import Any, Optional
 class I18nLoader:
     """Load and manage translations."""
 
-    def __init__(self, lang: str = "zh") -> None:
+    def __init__(self, lang: str = "en") -> None:
         self.lang = lang
         self.translations: dict[str, str] = {}
         self.logger = logging.getLogger(__name__)
